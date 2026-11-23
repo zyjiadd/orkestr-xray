@@ -1,0 +1,34 @@
+{
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 3000,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "f247da86-f6c7-4b7c-b0b3-e1b416571242",
+            "level": 0
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/vless"
+        }
+      }
+    }
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
